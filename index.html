@@ -7,17 +7,52 @@
     	border-style: solid;
     }
     .resize {
-    	width: 600px;
+    	width: 500px;
        }
     h1 {
     	font-family: monospace;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+      }
+    .slow {
+          position: absolute;
+          overflow: hidden;
+          animation: animate 1s linear forwards;
+        }
+ 
+        @keyframes animate {
+            0% {
+                height: 0px;
+            }
+            30% {
+                height: 30px;
+            }
+            60% {
+                height: 60px;
+            }
+        }
+    .zoom {
+        
+        transition: transform .2s;
+    }
+    .zoom:hover {
+        transform: scale(1.1);
       }
        
   </style>
   <head><title>Daniel's Journal</title></head>
   <body>
-    <img src=https://ak.picdn.net/shutterstock/videos/8617789/thumb/1.jpg class="border resize">
-    <h1> Welcome to my Journal! </h1> 
+    <div class="zoom center">
+      <img src=https://ak.picdn.net/shutterstock/videos/8617789/thumb/1.jpg class="border resize">
+    </div>
+    <h1 class="slow"> Welcome to my Journal! </h1> 
+    <br>
+    <br>
+    <br>
     <h4> Diese Sprachen habe ich bis jetzt gelernt: </h4>
     <label for="python">
     <input id="python" value="python" type="checkbox" name="code" checked>Python
@@ -36,8 +71,8 @@
     </label>
     <h4> Ich arbeite gerade an HTML und CSS!</h4>
 <h2 style="font-family: monospace, sans-serif;">23.02.2022</h2>
-<h>Heute habe ich diese Website gestartet. Ich dachte, es wäre dumm all die Sachen die ich lerne
-  in Word darstellen zu müssen, deshalb dachte ich, es wäre schlauer einfach eine Website zu machen!
+<h>Heute habe ich diese Website gestartet. Ich dachte, es wäre unspektakulär all die Sachen die ich lerne
+    in Word darstellen zu müssen, deshalb dachte ich, es wäre schlauer einfach eine Website zu machen!
 </h>
 <br>
 <h>Ich habe heute über Klassen in HTML gelernt. Ich lerne übrigens mit dieser</h>
