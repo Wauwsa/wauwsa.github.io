@@ -24,9 +24,15 @@
     	border-width: 10px;
     	border-style: solid;
     }
+    #background {  
+      height: 100%;
+      width: 99.5%;
+      background: linear-gradient(to top, rgb(255, 255, 255), rgb(0, 116, 25));
+    }
     .resize {
     	width: 500px;
        }
+
     h1 {
     	font-family: monospace;
       }
@@ -36,6 +42,7 @@
       margin-right: auto;
       width: 100%;
     }
+    
     .slow {
           position: absolute;
           overflow: hidden;
@@ -73,7 +80,7 @@
     <!---<div class="zoom center" style="width: 35%">
       <img src=https://ak.picdn.net/shutterstock/videos/8617789/thumb/1.jpg class="border resize">
     </div>-->
-    <div class="center">
+    <div class="center" id="background">
       <div class="img-wrapper border slow">
         <header>Welcome to my Journal!</header>
       </div>
