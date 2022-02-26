@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html>
     <style>
-        #background {
-            background: linear-gradient(to top, rgb(226, 250, 218), rgb(0, 116, 25));
-            width: 100%;
-            height: 100%;
-            background-size: auto;
+         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+        .fonty {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+        } 
+
+        #about {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 17px;
+            position: absolute;
+            left: 30px;
         }
 
-        *{
-            margin:0;
-            padding:0;
+        #background {
+            background: linear-gradient(to top, rgb(226, 250, 218), rgb(0, 116, 25));
+            width: 100vw;
+            height: 100%;
         }
-        
-        h1 {
-            font-family: "JetBrain Mono", monospace;
+
+        * {
+            margin: 0px;
         }
 
         h {
-            font-family: "JetBrain Mono", monospace;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 15px;
         }
 
-        .zoom-font {
-            transition: transform .2s;
-            display: inline-block;
+        h1 {
+            font-family: monospace;
         }
 
-        .zoom-font:hover {
-            transform: scale(1.04);
+        h2 {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 15px;
+        }
+
+        .pad {
+            padding-left: 8px;
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
     <head>
         <title>About this Website</title>
     </head>
 
     <body>
+        <div class="img-wrapper border zoom">
+            <header>
+              <div class="wrapper">
+                <div class="typing-demo">Welcome to my Journal!</div>
+              </div>
+            </header>
+        </div>
         <div id="background">
             <h1>Willkommen in der About Seite</h1>
             <br>
-            <h>This Website was build by</h>
+            <h>Diese Website wurde von</h>
             <a target="_blank" href="https://www.youtube.com/c/etuq1">
                 <span class="zoom-font" style="font-family: JetBrain Mono, monospace">Daniel</span>
-            </a><h>!</h>
+            </a><h>gecoded!</h>
             <br>
             <h>Dies ist eine Website, die für den Informatikunterricht gemacht wurde. </h>
         </div>

@@ -1,0 +1,143 @@
+  .fonty {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+  }
+
+  header {
+    background: linear-gradient(to top, #04fd42ba, #005d92cc), url(https://ak.picdn.net/shutterstock/videos/18346555/thumb/1.jpg);
+
+    height: 150px;
+    width: 100%;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 5.5vw;
+    text-shadow: 4px 4px #035800;
+    display: flex;
+    transform: scale(1.2);
+    justify-content: center;
+    align-items: center;
+  }
+
+  h {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+  }
+
+  h3 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+  }
+
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .typing-demo {
+    width: 22ch;
+    animation: typing 1.3s steps(22), blink .8s step-end infinite alternate;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+  .pad {
+    padding-left: 8px;
+  }
+
+  .date {
+    font-family: monospace, sans-serif;
+    text-decoration: underline;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+  }
+
+  .border {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+  }
+
+  .resize {
+    width: 500px;
+  }
+
+  h1 {
+    font-family: monospace;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .slow {
+    position: absolute;
+    overflow: hidden;
+    animation: animate 0.3s linear forwards;
+  }
+
+  @keyframes animate {
+    0% {
+      height: 0px;
+      width: 98.7%;
+    }
+
+    30% {
+      height: 45px;
+      width: 98.7%;
+    }
+
+    60% {
+      height: 90px;
+      width: 98.7%;
+    }
+
+    100% {
+      height: 150px;
+      width: 98.7%;
+    }
+  }
+
+  .zoom {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.432);
+    transition: transform .3s;
+  }
+
+  .zoom:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.432);
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.01);
+  }
+
+  .zoom-font {
+    transition: transform .2s ease-in-out;
+    display: inline-block;
+  }
+
+  .zoom-font:hover {
+    transform: scale(1.04);
+    color: rgb(204, 0, 255);
+  }
