@@ -46,7 +46,39 @@
 
         .pad {
             padding-left: 8px;
+            padding-right: 8px;
         }
+
+        .bild {
+            width: 90%;
+            height: 300px;
+        }
+
+        .bild img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .border {
+            border-color: black;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 1%;
+        }
+
+        .zoom {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.432);
+            transition: transform .5s ease-in-out;
+        }
+
+        .zoom:hover {
+            box-shadow: 0 5px 15px rgb(0, 0, 0);
+            max-width: 100%;
+            max-height: 100%;
+            transform: scale(1.01);
+            border-radius: 4%;
+        }
+
     </style>
     <link rel="stylesheet" href="styles.css">
     <head>
@@ -54,22 +86,46 @@
     </head>
 
     <body>
-        <div class="img-wrapper border zoom">
-            <header>
-              <div class="wrapper">
-                <div class="typing-demo">Welcome to my Journal!</div>
-              </div>
-            </header>
-        </div>
         <div id="background">
-            <h1>Willkommen in der About Seite</h1>
-            <br>
-            <h>Diese Website wurde von</h>
-            <a target="_blank" href="https://www.youtube.com/c/etuq1">
-                <span class="zoom-font" style="font-family: JetBrain Mono, monospace">Daniel</span>
-            </a><h>gecoded!</h>
-            <br>
-            <h>Dies ist eine Website, die für den Informatikunterricht gemacht wurde. </h>
+            <div class="img-wrapper border zoom">
+                <header>
+                <div class="wrapper">
+                    <div class="typing-demo">Welcome to my Journal!</div>
+                </div>
+                </header>
+            </div>
+            <div class="pad">
+                <h1>Willkommen in der About Seite</h1>
+                <br>
+                <h>Diese Website wurde von</h>
+                <a target="_blank" href="#aboutme">
+                    <span class="zoom-font" style="font-family: JetBrain Mono, monospace">Daniel</span>
+                </a><h>gecoded!</h>
+                <br>
+                <h>Dies ist eine Website, die für den Informatikunterricht gemacht wurde. </h>
+                <br>
+                <br>
+                <h>Ich habe diese Wesite angefangen, um es innovativ als Journal zu nutzen.
+                    Ich dachte, ich könne durch tatsächliches Schreiben einer Website mehr lernen,
+                    als durch einfaches Üben von gegebenen Problemen.
+                    <br>
+                    So bin ich anderen Problemen begegnet, die ich in dem Journal festgehalten habe.
+                    Auch nutze ich ein GitHub-Repository, durch das Herr Liebendörfer die Evolution dieser
+                    Website sehen kann.
+                    <br>
+                    Auch habe ich mir vorgenommen, nur CSS und HTML zu nutzen, da dies ja das Thema ist,
+                    nicht dass ich TypeScript oder JavaScript könnte ;)
+                </h>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>About me</h1>
+            </div>
         </div>
     </body>
 </html>
