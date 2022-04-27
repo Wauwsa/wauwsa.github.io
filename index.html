@@ -19,13 +19,13 @@
         }
 
         .content {
-        height: 200vh;
-        background-image: url(//unsplash.it/1000/1000);
-        background-color: #333;
-        background-blend-mode: multiply;
-        background-size: cover;
-        display: grid;
-        place-items: center;
+            height: 100vh;
+            background-image: url(background.jpg);
+            background-color: rgba(51, 51, 51, 0.409);
+            background-blend-mode: multiply;
+            background-size: cover;
+            display: grid;
+            place-items: center;
         }
 
         h {
@@ -33,9 +33,9 @@
         }
 
         .writing {
+            margin-top: -500px;
             padding-left: 10px;
             padding-right: 10px;
-            padding-top: 70px;
             text-align: center;
             color: white;
         }
@@ -199,8 +199,8 @@
         <nav>
             <ul>
                 <li><a href="#start">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="journal.html">Journal</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -209,14 +209,16 @@
         </label>
     </header>
     <main>
-        <div class="writing">
-            <h1>Willkommen zu meiner Website!</h1>
-            <p>Diese Website wurde für das Journal gemacht. <br>
-                Das Journal selber finden Sie in der Navigation-Bar! <br>
-                Diese Navigation-Bar wurde mithilfe dieses
-                <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA&t=2s" class="link" target="_blank"><span>Tutorials</span></a>
-                gemacht!
-            </p>
+        <div class="content">
+            <div class="writing">
+                <h1>Willkommen zu meiner Website!</h1>
+                <p>Diese Website wurde für das Journal gemacht.
+                    Das Journal selber finden Sie in der Navigation-Bar!
+                    Diese Navigation-Bar wurde mithilfe dieses
+                    <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA&t=2s" class="link" target="_blank"><span>Tutorials</span></a>
+                    gemacht!
+                </p>
+            </div>
         </div>
     </main>
 </html>
