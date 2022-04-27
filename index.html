@@ -8,9 +8,12 @@
         }
 
         *, *::before, *::after {
+            padding: 0;
             box-sizing: border-box;
+            outline: none;
         }
-
+        
+        /* NavBar */
         body {
             margin: 0;
             background: #222;
@@ -19,21 +22,20 @@
         }
 
         .content {
-            height: 100vh;
+            height: 200vh;
             background-image: url(background.jpg);
             background-color: rgba(51, 51, 51, 0.409);
             background-blend-mode: multiply;
             background-size: cover;
             display: grid;
-            place-items: center;
         }
 
         h {
             color: white;
         }
 
-        .writing {
-            margin-top: -500px;
+        .writing { 
+            margin-top: 80px;
             padding-left: 10px;
             padding-right: 10px;
             text-align: center;
@@ -193,6 +195,82 @@
                 transform: scale(1, 1);
             }
         }
+
+        /* Contact Form */
+
+        .wrapper {
+            position: flex;
+            margin-top: 150px;
+            transform: translateY(-50%);
+            width: 100%;
+            padding: 0 20%;
+        }
+
+        .contact-form {
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: rgba(108, 207, 146, 0.8);
+            padding: 30px;
+            border-radius: 5px;
+            display: flex;
+            box-shadow: 0 0 10px rgb(0, 195, 75);
+        }
+
+        .input-fields {
+            display: flex;
+            flex-direction: column;
+            margin-right: 4%;
+        }
+
+        .input-fields,
+        .msg {
+            width: 48%;
+        }
+
+        .input-fields .input,
+        .msg textarea {
+            margin: 10px 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.616);
+            padding: 10px;
+            color: rgba(0, 0, 0, 0.616);
+            width: 100%;
+        }
+
+        .msg textarea {
+            height: 200px;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        .btn {
+            background:rgb(0, 255, 98);
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(0, 195, 75);
+        }
+
+        @media screen and (max-width: 600px) {
+            .contact-form {
+                flex-direction: column;
+            }
+
+            .msg textarea {
+                height: 80px;
+            }
+
+            .input-fields,
+            .msg {
+                width: 100%;
+            }
+        }
+
     </style>
 
     <header id="start">
@@ -218,9 +296,30 @@
                     Diese Website wurde für das Journal gemacht.
                     Das Journal selber finden Sie in der Navigation-Bar!
                     Diese Navigation-Bar wurde mithilfe dieses
-                    <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA&t=2s" class="link" target="_blank"><span>Tutorials</span></a>
-                    gemacht!
+                    <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA&t" class="link" target="_blank"><span>Tutorials</span></a>
+                    gemacht! <br>
+                    Wie Sie sehen können, gibt es in der Navigation-Bar im Moment 4 verschiedene Links. <br>
+                    Diese Website ist übrigens nur mit HTML & CSS gemacht, kein TypeScript oder Javascript! <br> <br> <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at efficitur nibh. Integer elementum fringilla augue. Proin sit amet aliquam libero. Nam fermentum sem at sapien semper, non efficitur turpis interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce faucibus vulputate facilisis. Fusce consequat mauris lorem, at vestibulum justo scelerisque iaculis. <br>
+                    Aliquam sodales finibus quam id commodo. In eget dolor ultrices lacus molestie gravida ultrices at justo. Phasellus eget feugiat turpis. Suspendisse vulputate sagittis mi, vel egestas odio. Mauris dolor ligula, accumsan id varius eu, viverra nec ante. Mauris at tortor vel sem rhoncus ultrices. Aenean risus magna, eleifend at risus pretium, tincidunt luctus enim. Nam a tortor suscipit, tincidunt purus et, interdum mi. Duis elit tellus, pretium eu semper eget, ornare in nisi. Cras et neque nec leo finibus iaculis. Aliquam lacinia sodales nulla nec molestie. Ut rhoncus neque id convallis imperdiet. Pellentesque in elit eu ligula porta sollicitudin. Ut risus nisi, malesuada ut porttitor id, fringilla mattis tortor. <br>
+                    Pellentesque sapien velit, accumsan sed eros eget, pellentesque vestibulum dui. In venenatis tincidunt est, eu cursus est sollicitudin in. Aliquam eleifend luctus mauris a egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec interdum mi elit, in laoreet libero porttitor non. Mauris placerat velit tempus lacinia hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                    Sed bibendum lacus vitae nisi consectetur varius. Pellentesque sodales justo mauris, et mollis augue fringilla sit amet. Vivamus at lorem id eros elementum tempus. Sed eu turpis id quam fringilla tincidunt eget at orci. Ut imperdiet dictum quam sit amet viverra. Fusce eu quam sem. Sed dui leo, volutpat ut nisi in, varius imperdiet massa. Ut a lorem ut ex tristique congue. Ut tincidunt quam vitae aliquam gravida. Suspendisse quis scelerisque quam. <br>
+                    Cras bibendum mauris at dapibus convallis. Vivamus porttitor odio ac diam porttitor, quis mollis ex hendrerit. Curabitur eu consectetur dolor. Phasellus scelerisque magna vitae est placerat, nec tincidunt lorem dapibus. Maecenas tempor pulvinar felis ac molestie. Donec eleifend sed neque vel luctus. Phasellus eu erat vitae tellus feugiat malesuada nec et erat. Mauris congue porta nisl, ac sodales ipsum scelerisque eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus efficitur, neque egestas efficitur auctor, est arcu vulputate justo, fermentum finibus magna turpis ac massa. <br>
                 </p>
+            </div>
+            <div class="wrapper">
+                <div class="contact-form">
+                    <div class="input-fields">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="E-Mail Adresse">
+                        <input type="text" class="input" placeholder="Telefon">
+                        <input type="text" class="input" placeholder="Grund">
+                    </div>
+                    <div class="msg">
+                        <textarea placeholder="Nachricht"></textarea>
+                        <div class="btn">Send</div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
