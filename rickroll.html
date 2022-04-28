@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="styles.css">
     <head>
-        <title>Sorry about this</title>
+        <title>Überraschung!</title>
     </head>
-    <video width="1280" height="720" controls>
-        <source src="video.mp4" type="video/mp4">
-      Your browser does not support the video tag!
-    </video>
-    <h>
-        Kleine Überraschung!
-    </h>
+
+    <header>
+        <h1 class="logo">Daniel Iancu</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <main>
+        <div class="content-rickroll">
+            <div class="writing">
+                <video width="640" height="480" controls>
+                    <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag!
+                </video>
+                <p>
+                    Dies ist ein kleines Überraschungsvideo für denjenigen, der auf meinen Namen geklickt hat!
+                    <br>
+                    Wenn Sie darauf geklickt haben, viel Spass!
+                </p>
 </html>
