@@ -1,158 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+    <link rel="stylesheet" href="styles.css">
 
-    .fonty {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 13px;
-    } 
-
-    #about {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 17px;
-      position: absolute;
-      left: 30px;
-    }
-
-    #background {
-      background: linear-gradient(to top, rgb(226, 250, 218), rgb(0, 116, 25));
-      width: 100vw;
-      height: 100%;
-    }
-
-    body {
-      margin: 0px;
-    }
-
-    h {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 15px;
-    }
-
-    h1 {
-      font-family: monospace;
-    }
-
-    h2 {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 20px;
-    }
-
-    h3 {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 15px;
-    }
-
-    .pad {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      float: left;
-    }
-  </style>
-<link rel="stylesheet" href="styles.css">
-
-<head>
-  <title>Daniel's Journal</title>
-</head>
-
-<body>
-  <div id="background">
-    <div class="img-wrapper border zoom">
-      <header>
-        <div class="wrapper">
-          <div class="typing-demo">Welcome to my Journal!</div>
+    <header>
+        <h1 class="logo">Daniel Iancu</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#start">Journal</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <main id="start">
+        <div class="content">
+            <div class="writing">
+                <h1>Journal</h1>
+                <p>
+                    Hallo! <br>
+                    Dies ist die neue und moderne Version des Journals!
+                    Die alte Version können Sie <a href="old_journal.html" class="link" target="_blank"><span>hier</span></a> finden!
+                    Ich habe mir ein Video für die Navigation-Bar angeschaut und dachte dann, dass diese nicht zu dem "rustikalen" Style der vorherigen Seite passt!
+                    Daher habe ich mich entschieden, die gesamte Website auf diesen Style zu ändern.
+                    Ich werde die alten Versionen immer in den dazugehörigen neuen Seiten verlinkt haben.
+                    Das alte Journal wird auch meine alten Einträge beinhalten, jedoch werde ich diese auch auf diese
+                    Seite kopieren. Also sind die ersten Einträge ziemlich alt. Dieser neue Style wurde am 27.04.22 gemacht!
+                </p>
+                <h3>Diese Sprachen habe ich bis jetzt gelernt:</h3>
+                <label for="python">
+                    <input id="python" value="python" type="checkbox" name="code" checked>
+                    <span>Python</span>
+                  </label>
+                  <br>
+                  <label for="java">
+                    <input id="java" value="java" type="checkbox" name="code" disabled>
+                    <span>Java</span>
+                  </label>
+                  <br>
+                  <label for="html">
+                    <input id="html" value="html" type="checkbox" name="code" checked>
+                    <span>HTML</span>
+                  </label>
+                  <br>
+                  <label for="c">
+                    <input id="c" value="c" type="checkbox" name="code" disabled>
+                    <span>C++</span>
+                  </label>
+                  <p>Dazu arbeite ich im Moment an HTML und CSS!</p>
+                  <br>
+                  <h2 class="date">23.02.2022</h2>
+                  <p>Heute habe ich diese Website gestartet. Ich dachte, es wäre unspektakulär all die Sachen die ich lerne
+                    in Word darstellen zu müssen, deshalb dachte ich, es wäre schlauer einfach eine Website zu machen!</p>
+                    <br>
+                    <p>
+                        Ich habe heute über Klassen in HTML gelernt. Ich lerne übrigens mit dieser<a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/" class="link" target="_blank"><span> Website!</span></a> <br>
+                        Ich habe gelernt, wie man verschiedene Styles für z.B. alle p's zu nutzen. <br>
+                        Auch habe ich über Labels gelernt und wie diese Inputs erleichtern. Daher kann ich dies machen: 
+                    </p>
+                    <br>
+                    <label for="test1">
+                        <input type="checkbox" id="test1" name="tests">
+                        <span>Checkbox 1 (normal)</span>
+                    </label>
+                    <br>
+                    <label for="test2">
+                        <input type="checkbox" id="test2" name="tests" checked>
+                        <span>Checkbox 2 (checked)</span>
+                    </label>
+                    <br>
+                    <label for="test3">
+                        <input type="checkbox" id="test3" name="tests" disabled>
+                        <span>Checkbox 3 (locked)</span>
+                    </label>
+                    <p>Ausserdem kann ich jedes von denen gecheckt haben, indem ich einfach die Attribute "checked" hinzufüge.</p>
+                    <br>
+                    <h2 class="date">25.02.2022</h2>
+                    <p>
+                        Heute habe ich diverse CSS Design Änderungen gemacht. Sie können leider nicht wirklich sehen, wie viel ich
+                        ändere, da Sie die finale Form sehen werden, aber immerhin kann ich es beschreiben. Ich habe einen Hintergrund
+                        gemacht, der hatte aber eine Margin, nämlich machen Browsers automatisch eine 8px Margin, was ich nicht
+                        gecheckt habe. Deshalb musste ich dann sehr lange herumtüfteln.
+                    </p>
+                    <br>
+                    <h2 class="date">17.03.2022</h2>
+                    <p>
+                        Wir haben heute wieder an Python weitergearbeitet. <br>
+                        Das heutige Thema war Maus und Keyboard Input mit gturtle. <br>
+                        Da ich das Thema schon zuhause angeschaut hatte, habe ich an meinem Painter Programm weitergearbeitet.
+                        Ich habe einen sehr komplizierten Bug mit dem Undo von der Fill Funktion, da das Programm Probleme mit den Koordinaten hat.
+                        Ich habe deshalb Soham gefragt mir zu helfen. Dann habe ich ein Tic Tac Toe Spiel gemacht, kann aber noch nicht
+                        checken, ob ein Spieler gewonnen hat.
+                    </p>
+                <footer>
+                    <div class="footer"></div>
+                </footer>
+            </div>
         </div>
-      </header>
-    </div>
-    <br>
-    <ul>
-      <li><a href="about.html" id="about"><span class="zoom-font">About</span></a></li>
-      <br>
-      <li><a href="index.html" id="about"><span class="zoom-font">Test Website</span></a></li>
-    </ul>
-    <br>
-    <div class="pad">
-      <h2> Diese Sprachen habe ich bis jetzt gelernt: </h2>
-      <label for="python">
-        <input id="python" value="python" type="checkbox" name="code" checked>
-        <span class="fonty">Python</span>
-      </label>
-      <br>
-      <label for="java">
-        <input id="java" value="java" type="checkbox" name="code" disabled>
-        <span class="fonty">Java</span>
-      </label>
-      <br>
-      <label for="html">
-        <input id="html" value="html" type="checkbox" name="code" checked>
-        <span class="fonty">HTML</span>
-      </label>
-      <br>
-      <label for="c">
-        <input id="c" value="c" type="checkbox" name="code" disabled>
-        <span class="fonty">C++</span>
-      </label>
-      <h3> Ich arbeite gerade an HTML und CSS!</h3>
-      <h2 class="date">23.02.2022</h2>
-      <h>Heute habe ich diese Website gestartet. Ich dachte, es wäre unspektakulär all die Sachen die ich lerne
-        in Word darstellen zu müssen, deshalb dachte ich, es wäre schlauer einfach eine Website zu machen!
-      </h>
-      <br>
-      <h>Ich habe heute über Klassen in HTML gelernt. Ich lerne übrigens mit dieser</h>
-      <a target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/"
-        style="font-family: JetBrains Mono, monospace"><span class="zoom-font">Website</span></a>
-      <h>!</h>
-      <h>Ich habe gelernt, wie man verschiedene Styles für z.B. alle p's zu nutzen.</h>
-      <br>
-      <h>Auch habe ich über Labels gelernt und wie diese Inputs erleichtern. Daher kann ich dies machen:</h>
-      <br>
-      <label for="test1">
-        <input type="checkbox" id="test1" name="tests">
-        <span class="fonty">Checkbox 1 (normal)</span>
-      </label>
-      <br>
-      <label for="test2">
-        <input type="checkbox" id="test2" name="tests" checked>
-        <span class="fonty">Checkbox 2 (checked)</span>
-      </label>
-      <br>
-      <label for="test3">
-        <input type="checkbox" id="test3" name="tests" disabled>
-        <span class="fonty">Checkbox 3 (locked)</span>
-      </label>
-      <br>
-      <h>Ausserdem kann ich jedes von denen gecheckt haben, indem ich einfach die Attribute "checked" hinzufüge.</h>
-      <h2 class="date">25.02.2022</h2>
-      <div>
-        <h>Heute habe ich diverse CSS Design Änderungen gemacht. Sie können leider nicht wirklich sehen, wie viel ich
-          ändere, da Sie die finale Form sehen werden, aber immerhin kann ich es beschreiben. Ich habe einen Hintergrund
-          gemacht, der hatte aber eine Margin, nämlich machen Browsers automatisch eine 8px Margin, was ich nicht
-          gecheckt habe. Deshalb musste ich dann sehr lange herumtüfteln.</h>
-      </div>
-      <h2 class="date">17.03.2022</h2>
-      <div>
-        <h>
-          Wir haben heute wieder an Python weitergearbeitet. <br>
-          Das heutige Thema war Maus und Keyboard Input mit gturtle. <br>
-          Da ich das Thema schon zuhause angeschaut hatte, habe ich an meinem Painter Programm weitergearbeitet.
-          Ich habe einen sehr komplizierten Bug mit dem Undo von der Fill Funktion, da das Programm Probleme mit den Koordinaten hat.
-          Ich habe deshalb Soham gefragt mir zu helfen. Dann habe ich ein Tic Tac Toe Spiel gemacht, kann aber noch nicht
-          checken, ob ein Spieler gewonnen hat.
-        </h>
-      </div>
-    </div>
-  </div>
-</body>
-
+    </main>
 </html>
