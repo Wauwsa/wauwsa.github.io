@@ -21,6 +21,16 @@
   text-decoration: underline !important;
 }
 
+.zoom-font {
+    transition: transform .2s ease-in-out;
+    display: inline-block;
+    }
+    
+.zoom-font:hover {
+transform: scale(1.04);
+color: rgb(244, 113, 222);
+}
+
 /* NavBar */
 body {
     margin: 0;
@@ -222,75 +232,74 @@ nav a:hover {
     }
 }/* Contact Form */
 
-        .wrapper {
-            position: flex;
-            width: 100%;
-            margin-top: 50px;
-            padding: 0 20%;
-        }
+.wrapper {
+    position: flex;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20%;
+}
 
-        .contact-form {
-            max-width: 550px;
-            margin: 0 auto;
-            background-color: rgba(84, 169, 117, 0.8);
-            padding: 30px;
-            border-radius: 5px;
-            display: flex;
-            box-shadow: 0 0 10px rgb(0, 195, 75);
-        }
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: rgba(84, 169, 117, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgb(0, 195, 75);
+}
 
-        .input-fields {
-            display: flex;
-            flex-direction: column;
-            margin-right: 4%;
-        }
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
 
-        .input-fields,
-        .msg {
-            width: 48%;
-        }
+.input-fields,
+.msg {
+    width: 48%;
+}
 
-        .input-fields .input,
-        .msg textarea {
-            margin: 10px 0;
-            background: transparent;
-            border: 0;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.616);
-            padding: 10px;
-            color: rgba(0, 0, 0, 0.616);
-            width: 100%;
-        }
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.616);
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+}
 
-        .msg textarea {
-            height: 200px;
-        }
+.msg textarea {
+    height: 200px;
+}
 
-        ::placeholder {
-            color: black;
-        }
+::placeholder {
+    color: black;
+}
 
-        .btn {
-            background:rgb(0, 255, 98);
-            text-align: center;
-            padding: 15px;
-            border-radius: 5px;
-            color: black;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgb(0, 141, 54);
-        }
+.btn {
+    background:rgb(0, 255, 98);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 141, 54);
+}
 
-        @media screen and (max-width: 600px) {
-            .contact-form {
-                flex-direction: column;
-            }
+@media screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
 
-            .msg textarea {
-                height: 80px;
-            }
+    .msg textarea {
+        height: 80px;
+    }
 
-            .input-fields,
-            .msg {
-                width: 100%;
-            }
-        }
-      
+    .input-fields,
+    .msg {
+        width: 100%;
+    }
+}
